@@ -9,6 +9,7 @@
 #import "WebViewViewController.h"
 
 @interface WebViewViewController ()
+@property (nonatomic, strong) IBOutlet UIWebView *webPage;
 
 @end
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *indexPath = [NSBundle pathForResource:@"index" ofType:@"html" inDirectory:nil];
+    [self.webPage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:indexPath]]];
 }
 
 - (void)didReceiveMemoryWarning
