@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42A3FCE016B7E6F900C54E10 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 42A3FCDF16B7E6F900C54E10 /* index.html */; };
+		42A3FCE216B7ED6000C54E10 /* Tsukubai Water-Basin).gif in Resources */ = {isa = PBXBuildFile; fileRef = 42A3FCE116B7ED6000C54E10 /* Tsukubai Water-Basin).gif */; };
+		42A3FCE416B7ED7400C54E10 /* Woof.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42A3FCE316B7ED7400C54E10 /* Woof.gif */; };
+		42A3FCE616B7F09F00C54E10 /* Pear.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42A3FCE516B7F09E00C54E10 /* Pear.gif */; };
+		42A3FCE816B7F0A700C54E10 /* Green Apple.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42A3FCE716B7F0A700C54E10 /* Green Apple.gif */; };
 		42DFB96616B7BEA100AAE2A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DFB96516B7BEA100AAE2A8 /* UIKit.framework */; };
 		42DFB96816B7BEA100AAE2A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DFB96716B7BEA100AAE2A8 /* Foundation.framework */; };
 		42DFB96A16B7BEA100AAE2A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DFB96916B7BEA100AAE2A8 /* CoreGraphics.framework */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42A3FCDF16B7E6F900C54E10 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		42A3FCE116B7ED6000C54E10 /* Tsukubai Water-Basin).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Tsukubai Water-Basin).gif"; sourceTree = "<group>"; };
+		42A3FCE316B7ED7400C54E10 /* Woof.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Woof.gif; sourceTree = "<group>"; };
+		42A3FCE516B7F09E00C54E10 /* Pear.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Pear.gif; sourceTree = "<group>"; };
+		42A3FCE716B7F0A700C54E10 /* Green Apple.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Green Apple.gif"; sourceTree = "<group>"; };
 		42DFB96116B7BEA100AAE2A8 /* WebViewTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DFB96516B7BEA100AAE2A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42DFB96716B7BEA100AAE2A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +98,11 @@
 				42DFB97D16B7BEA200AAE2A8 /* MainStoryboard.storyboard */,
 				42DFB98016B7BEA200AAE2A8 /* WebViewViewController.h */,
 				42DFB98116B7BEA200AAE2A8 /* WebViewViewController.m */,
+				42A3FCE116B7ED6000C54E10 /* Tsukubai Water-Basin).gif */,
+				42A3FCE316B7ED7400C54E10 /* Woof.gif */,
+				42A3FCE516B7F09E00C54E10 /* Pear.gif */,
+				42A3FCE716B7F0A700C54E10 /* Green Apple.gif */,
+				42A3FCDF16B7E6F900C54E10 /* index.html */,
 				42DFB96C16B7BEA100AAE2A8 /* Supporting Files */,
 			);
 			path = WebViewTestProject;
@@ -164,6 +179,11 @@
 				42DFB97A16B7BEA200AAE2A8 /* Default@2x.png in Resources */,
 				42DFB97C16B7BEA200AAE2A8 /* Default-568h@2x.png in Resources */,
 				42DFB97F16B7BEA200AAE2A8 /* MainStoryboard.storyboard in Resources */,
+				42A3FCE016B7E6F900C54E10 /* index.html in Resources */,
+				42A3FCE216B7ED6000C54E10 /* Tsukubai Water-Basin).gif in Resources */,
+				42A3FCE416B7ED7400C54E10 /* Woof.gif in Resources */,
+				42A3FCE616B7F09F00C54E10 /* Pear.gif in Resources */,
+				42A3FCE816B7F0A700C54E10 /* Green Apple.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +218,8 @@
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
 		};
 /* End PBXVariantGroup section */
 
@@ -293,6 +315,7 @@
 				42DFB98716B7BEA200AAE2A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

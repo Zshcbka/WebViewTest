@@ -1,31 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Web View View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="WebViewViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="lOn-Bj-zWy">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0k3-s0-GoF">
+                            <webView autoresizesSubviews="NO" contentMode="scaleToFill" id="0k3-s0-GoF">
+                                <rect key="frame" x="0.0" y="20" width="320" height="60"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="twK-dl-IOA"/>
+                                </connections>
+                            </webView>
+                            <webView autoresizesSubviews="NO" contentMode="scaleToFill" id="1Jh-HA-V4w">
+                                <rect key="frame" x="0.0" y="105" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="pSD-aR-Exg"/>
+                                </connections>
+                            </webView>
+                            <webView autoresizesSubviews="NO" contentMode="scaleToFill" id="bd2-Ds-lA0">
+                                <rect key="frame" x="0.0" y="195" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="kma-u5-b1x"/>
+                                </connections>
+                            </webView>
+                            <webView autoresizesSubviews="NO" contentMode="scaleToFill" id="Azp-yn-nty">
+                                <rect key="frame" x="0.0" y="286" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="LOv-LQ-Q22"/>
+                                </connections>
+                            </webView>
+                            <webView autoresizesSubviews="NO" contentMode="scaleToFill" id="i9L-UP-RRM">
+                                <rect key="frame" x="0.0" y="379" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Q82-Zw-Yrm"/>
+                                </connections>
+                            </webView>
+                            <webView autoresizesSubviews="NO" contentMode="scaleToFill" id="fOK-Zr-2Gf">
+                                <rect key="frame" x="0.0" y="468" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="fC6-Q8-D2Y"/>
+                                </connections>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0k3-s0-GoF" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="1DW-kU-w5k"/>
-                            <constraint firstItem="0k3-s0-GoF" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="bI0-Li-Os9"/>
-                            <constraint firstItem="0k3-s0-GoF" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="ptq-iT-Hw3"/>
-                            <constraint firstItem="0k3-s0-GoF" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="rOE-Lx-rd0"/>
-                        </constraints>
-                    </view>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <connections>
+                            <outlet property="delegate" destination="2" id="Bk5-1R-cti"/>
+                        </connections>
+                    </scrollView>
                     <connections>
-                        <outlet property="webPage" destination="0k3-s0-GoF" id="4IM-l0-gkJ"/>
+                        <outlet property="scrollView" destination="lOn-Bj-zWy" id="fFk-jm-L09"/>
+                        <outletCollection property="webPage" destination="0k3-s0-GoF" id="UoG-by-eEx"/>
+                        <outletCollection property="webPage" destination="1Jh-HA-V4w" id="for-4Z-8cD"/>
+                        <outletCollection property="webPage" destination="bd2-Ds-lA0" id="xe6-qT-vh6"/>
+                        <outletCollection property="webPage" destination="Azp-yn-nty" id="l7W-Kw-WWn"/>
+                        <outletCollection property="webPage" destination="fOK-Zr-2Gf" id="VXT-de-aWk"/>
+                        <outletCollection property="webPage" destination="i9L-UP-RRM" id="bqa-m7-nqX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
